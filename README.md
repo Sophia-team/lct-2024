@@ -65,7 +65,7 @@ graph TD;
 └── notebooks          <- Jupyter notebooks с примерами и исследованиями
     ├── embeddings.ipynb    <- создание эмбеддингов
     ├── drafts              <- черновики
-    ├── baseline.ipynb      <- бейзлайн модели без эмбеддингов
+    ├── baseline_core.ipynb      <- бейзлайн модели без эмбеддингов
     └── baseline.ipynb      <- бейзлайн модели
 ├── pyproject.toml     <- Project configuration file
 ├── requirements.txt
