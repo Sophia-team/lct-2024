@@ -56,20 +56,22 @@ graph TD;
 
 ### Обучение pyboost
 С помощью полученных эмбеддинегов строится бустинги.  
-`notebooks/pyboost.ipynb` - скрипт получения предсказания.  
 
 ## Структура репозитория
 ```
 ├── README.md
 ├── data               <- данные (в гит не загружены, очень большие)
 ├── models             <- используемые модели (для эмбедингов и для предикшена)
-├── notebooks          <- Jupyter notebooks с примерами и исследованиями
+└── notebooks          <- Jupyter notebooks с примерами и исследованиями
+    ├── embeddings.ipynb    <- создание эмбеддингов
+    ├── drafts              <- черновики
+    ├── baseline.ipynb      <- бейзлайн модели без эмбеддингов
+    └── baseline.ipynb      <- бейзлайн модели
 ├── pyproject.toml     <- Project configuration file
 ├── requirements.txt
 └── src                     <- Source code
     ├── __init__.py
     └── lct_2024                
-        ├── __init__.py 
-        ├── predict.py          <-           
-        └── train.py            <- 
+        ├── __init__.py          
+        └── utils.py        <- используемые скрипты и функции
 ```
