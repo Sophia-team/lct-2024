@@ -1,0 +1,31 @@
+[project]
+name = "lct-2024"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Aleksandr Ivanov", email = "alex.iv.vad@gmail.com"},
+]
+dependencies = [
+    "pytorch-lifestream>=0.6.0",
+    "lightautoml>=0.3.8.1",
+    "py-boost>=0.5.1",
+    "cupy-cuda110>=12.3.0",
+    "ipykernel>=6.29.4",
+    "tensorboard>=2.17.0",
+    "pandas>=1.5.3",
+]
+requires-python = ">=3.9,<3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = true
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "black"
+]
